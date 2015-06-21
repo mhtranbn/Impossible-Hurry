@@ -20,7 +20,7 @@ class ViewController: UIViewController,STADelegateProtocol {
     var vY : Double = 0
     var timer: NSTimer?
     var delTa : Double = 0.008
-    var t: Double = 0.025
+    var t: Double = 0.027
     var d: Int = 0
     var chamhv: Bool?
     var imageIndex: Int?
@@ -61,7 +61,7 @@ class ViewController: UIViewController,STADelegateProtocol {
         self.view.addSubview(bi!)
         hv = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width - 200, height: size.width - 200))
         hv?.center = CGPoint(x: size.width * 0.5, y: size.height * 7/16 + 150)
-        NSLog("\(size.height - 180)")
+//        NSLog("\(size.height - 180)")
         hv?.image = UIImage(named: "hv.png")
         self.view.addSubview(hv!)
         score = 0
@@ -235,9 +235,9 @@ class ViewController: UIViewController,STADelegateProtocol {
     
     func gameOver(_timer: NSTimer) {
         
-        NSLog("gia tri d = \(d)")
+//        NSLog("gia tri d = \(d)")
         if ( d == 4 ) {
-            startAppAdLoadShow!.loadAd(STAAdType_Automatic, withDelegate: self)
+            startAppAdLoadShow!.loadAdWithDelegate(self)
 //            startAppAd!.showAd()
             d = 0
         }
