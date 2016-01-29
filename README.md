@@ -1,7 +1,1 @@
-# 
-```
-#!python
-
-Your title here...
-```
- ## Impossible-Hurry
+# Impossible-Hurry
