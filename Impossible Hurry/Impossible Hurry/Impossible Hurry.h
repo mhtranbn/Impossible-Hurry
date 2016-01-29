@@ -9,6 +9,6 @@
 #ifndef Impossible_Hurry_Impossible_Hurry_h
 #define Impossible_Hurry_Impossible_Hurry_h
 //#import "GADBannerView.h"
-#import <StartApp/StartApp.h> 
+
 
 #endif
